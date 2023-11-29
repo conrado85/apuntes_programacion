@@ -23,9 +23,7 @@ Recuerda que si el cliente pidió la silla para niños debe también indicarlo e
 
 
 
-
-
-
+ 
 let montoVehicular = (TipoVehiculo, diasAlquiler, sillaBebe) => {
 
     let operacion = 0;
@@ -109,6 +107,57 @@ adicionales que el cliente haya seleccionado.
 Una vez creado el programa, ejecutalo. Para probar las diferentes respuestas, invoca a la
 segunda función, asigna diferentes valores o argumentos. No olvides usar el console.log()
 para mostrar los resultados al usuario, de acuerdo al siguiente mensaje:**/
+
+let pedido_hamburguesa = ( tipo_Hamburguesa, jamon, queso,salsa_tomate, mayonesa, mostaza, tomate, lechuga, cebolla ) => {
+
+    let total = 0;
+
+    switch (tipo_Hamburguesa.toLowerCase()) {
+        case 'carne  a la parrilla ':
+            total = 1800 ;
+            break;
+        case 'pollo':
+            total = 1500;
+            break;
+        case 'vegetariana':
+            total = 1200;
+            break;
+        default:
+            total = 0 ;
+            break;
+
+
+    }
+    if(jamon){total = total+30}
+    if(queso){total = total+25}
+    if(salsa_tomate){total = total+5}
+    if(mayonesa){total = total+5}
+    if(mostaza){total = total+5}  
+    if(tomate){total = total+15}
+    if(lechuga){total = total+10}
+    if(cebolla){total = total+10}
+
+    return total
+ 
+
+}
+//console.log( pedido_hamburguesa('pollo',true,true,true,true,true,true,true,true));
+
+let la_respuesta =(nombre, apellido, tipo_Hamburguesa, jamon, queso, salsa_tomate, mayonesa, mostaza, tomate, lechuga,
+    cebolla,callback)=> {
+ return 'hola '+nombre+' '+apellido+' su pedido fue registrado con un total $:'+callback(tipo_Hamburguesa, jamon, queso,
+    salsa_tomate,mayonesa, mostaza, tomate,lechuga, cebolla);
+
+    }
+console.log(la_respuesta('Facundo','Gonzalez','carne  a la parrilla ', true,true,false,true,true,true,true,true,pedido_hamburguesa));
+console.log(la_respuesta('Conrado','Gonzalez','pollo', true,false,true,true,false,true,true,true,pedido_hamburguesa));
+console.log(la_respuesta('Mauro','Gonzalez','vegetariana', true,true,true,true,true,false,false,false,pedido_hamburguesa));
+
+
+
+
+
+
 
 
 

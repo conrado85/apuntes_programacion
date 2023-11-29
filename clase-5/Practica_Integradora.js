@@ -176,3 +176,36 @@ nosotros son 7 de ellos.
 dicha función recibe tres parámetros: El salario mensual, la cantidad de días
 trabajados y la cantidad de horas que regularmente trabajada por día.
 Cuando tengas alguna duda que te impida avanzar, puedes preguntarle a tus profesores. **/
+
+function mayuscula(cadena){
+    let cadena_mayuscula = cadena.toUpperCase();
+    return 'la cadena en mayuscula : '+cadena_mayuscula;
+}
+
+console.log(mayuscula( 'hola mundo!'));
+
+ 
+function tipo_de_dato( parametro){
+    let dato= (typeof parametro);
+    return 'El parametro introducido es de tipo un dato :'+dato;
+}
+
+console.log(tipo_de_dato(10));
+console.log(tipo_de_dato('hola'));
+console.log(tipo_de_dato(true));
+
+
+function anos_perrunos(ano){
+    let calculo = ano*7;
+    return 'El perro tiene : '+calculo+' años';
+}
+
+console.log(anos_perrunos(3));
+
+function valor_horas_trabajadas(salarioMensual, cantidadDiasTrabajados, horasPorDia ){
+    let valorXhora = (salarioMensual/cantidadDiasTrabajados)/horasPorDia;
+    return 'El valor de la hora del operario es $ '+valorXhora;
+
+}
+
+console.log(valor_horas_trabajadas(200,10,9));

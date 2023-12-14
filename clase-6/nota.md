@@ -165,6 +165,127 @@ Busca en el array el elemento que recibe como parametro.
 
 
 
+***
+
+### Strings
+
+## Propiedades y metodos de strings
+
+* "Para javaScript los strings son como un array de caracteres.
+* Por esa razon disponemos de propiedades y metodos muy utiles a la hora de trabajar con la informacion que hay adentro" .
+
+***
+
+Los **string**  en javaScript.
+
+En muchos sentidos, para javaScript, Un strings no es mas que un **array de caracteres**. Al igual que en los arrays, la primera posicion siempre sera 0.
+
+**let** nombre = 'fran'; //contiene 3 posiciones (f=0),(r=1),(a=2) y (n=3).
+
+Para acceder a un caracter puntual de  de un strings, nombramos al string y, **dentro de los corchetes**, escribimos el indice al cual queremos acceder.
+
+nombre[2]; // accedemos a la letra 'a', el indice 2 del string
+
+***
+
+## .Length
+
+Esta propiedad retorna total de caracteres del string, incluidos los espacios.Como es una propiedad, al invocarla, no necesitaremos los parentesis.
+
+
+ **let** miSerie = 'Mad Men';
+miSerie.**length**;  // devuelve 7
+
+###1 un array.
+
+**let** arrayNombre = ['Bart', 'Lisa', 'Moe'];
+arrayNombre.**length**; //devuelve 3
+
+arrayNombre[0].**length**; //corresponde a 'bart', devuelve 4.
+
+***
+
+## .indexOf().
+
+Busca, en el string, el string que recibe como parametro.
+
+- **Recibe** un elemento a buscar en el array.
+- **Retorna** el primer indice donde encontro lo que buscabamos. si no lo encuentra, retorna un  -1.
+
+**let** saludo = '¡hola! Estamos programando ';
+
+saludo.indexOf('Estamos');  //devuelve 7
+saludo.indexOf('vamos');   //devuelve -1, no lo encontro
+saludo.indexOf('o');  //encuentra la letra 'o' que esta  en la posicion 2, devuelve 2 y termina la ejecucion.
+
+"Ya vimos antes que una funcion es un bloque de codigo que nos permite agrupar funcionalidad para usarla muchas veces.
+cuando una **funcion le pertenece a un objeto**, en este caso nuestro string, la llamamos metodo."
+
+***
+ 
+ ## .slice()
+
+ Corta el string y devuelve una parte del string donde se aplica.
+
+- **Recibe** 2 numeros como parametros(puede ser negativos)
+          -El indice desde inicia el corte.
+          -el indice hasta donde hacer el corte(es opcional).
+
+- **Retorna**la parte correspondiente al corte.
+
+**let** saludo = '¡hola! Estamos programando ';
+
+saludo.**slice**(7,14)  //devuelve 'estamos'.
+saludo.**slice**(15)  //devuelve 'programando'.
+saludo.**slice**(-10)  // ¿que devuelve? ! A investigar¡.
+
+***
+
+## .trim()
+
+Elimina los espacios que esten al principio y al final de un string.
+
+- **no recibe** parmetros.
+- No quita los espacios del medio.
+
+**let** saludo = '   ¡hola! Estamos programando     ';
+
+saludo.**trim**();  // devuelve '¡hola! Estamos programando' sin los espacios del principio y el final.
+
+***
+
+## .split()
+
+Divide un string en partes.
+ - **Recibe** un string que usara como separador de las partes.
+ - **Devuelve un array** con partes del string.
+
+**let** saludo = '¡hola! Estamos programando ';
+ 
+saludo.**split**(' ');  // devuelve ['¡hola!','Estamos','programando']
+
+***
+
+## .replace()
+
+Reemplasa una parte del string por otra.
+- **Recibe** dos string como parametro:
+    - El string que queremos buscar.
+    - El string que usaremos de reemplazo.
+- **Retorna** un nuevo string con el reemplazo.
+
+**let** saludo = '¡hola! Estamos programando ';
+saludo.**replace**('programando','jugando')  //devuelve hola estamos jugando
+
+***
+
+"Si  bien **cada metodo** realiza una **accion muy simple**, cuando los **combinamos** podemos lograr **resultados** mucho mas **complejos y utiles**"
+
+
+
+
+
+
 
 
 

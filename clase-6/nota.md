@@ -119,6 +119,52 @@ Une los elementos de un array utilizando el separador que le especifiquemos.Si n
 
 console.log(colores); // ['Rojo,aranja,Azul']
 
+***
+
+## .indexOf()
+
+Busca en el array el elemento que recibe como parametro.
+
+- **Recibe** un elemento a buscar en el array.
+- **Retorna** el primer indice donde encontro lo que buscabamos. Si no lo encuentra, retorna un -1.
+
+**let** colores = ['rojo','naranja','azul'];
+
+  colores.indexof('Azul');  // encontro lo que buscaba.Devuelve 2, el indice del elemento.
+
+  colores.indexOf('banana'); //no encontro lo que buscaba. devuelve -1.
+
+  ***
+
+  ## .lastIndexOf()
+
+  Similar a *indexOF()*,con la salvedad de que empieza buscando el elemento por el **final del array**(de atras hacia adelante).
+  En caso de haber elementos repetidos.devuelve la posicion del primero que encuentre(o sea el ultimo si miramos desde el principio).
+
+  **let** colores = ['rojo','naranja','azul'];
+
+  colores.lastIndexOf('naranja');
+
+  ***
+
+  ## includes().
+
+  Tambien similar a .indexOf(), con la salvedad que retorna un booleano.
+
+  - **Recibe** un elemento a buscar en el array.
+  - **Retorna** true si encuentra lo que buscamos, false en caso contrario.
+
+
+  **let** colores = ['rojo','naranja','azul'];
+
+  colores.includes('rojo'); // de encontrarlo devolvera un true
+  colores.includes('azul'); // de no encontrar devuelve un false
+
+ 
+
+
+
+
 
 
 

@@ -196,7 +196,7 @@ Esta propiedad retorna total de caracteres del string, incluidos los espacios.Co
  **let** miSerie = 'Mad Men';
 miSerie.**length**;  // devuelve 7
 
-###1 un array.
+### un array.
 
 **let** arrayNombre = ['Bart', 'Lisa', 'Moe'];
 arrayNombre.**length**; //devuelve 3

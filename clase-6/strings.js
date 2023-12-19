@@ -38,3 +38,37 @@ console.log(saludo.split(' '));
 //.replace
 
 console.log(saludo.replace('programando','jugando'))
+
+// ejemplos.
+// Agregar un dominio
+
+function dominio (string ){
+    let http = "http://www."
+        return http + string ;
+    }
+ console.log(dominio("digitalhouse.com.ar" ));
+
+// crear un texto buscar un string y reemplazarlo.
+
+ function reemplazoFastFast(texto,salida,entrada ) {
+   
+    let  usar = texto.replace(salida,entrada);
+    return usar
+}
+console.log(reemplazoFastFast( 'Este texto es mala onda','mala','buena'));
+
+
+// crea una funcion que busque la palabra mencionada.
+
+function menciona(texto, palabra) {
+     
+    if (texto.indexOf(palabra) !== -1) {
+        return true ;
+
+    } else {
+        return false ;
+    } 
+        
+    }
+
+console.log(menciona('Este texto hace mencion a las palabras','mencion'));

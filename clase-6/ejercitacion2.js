@@ -33,3 +33,26 @@ ambas estructuras creadas y debe devolver un nueva nueva estructura con todas la
 
 películas, para ello te recomendamos que investigues lo que hace el método
 .concat().  */
+// punto 2
+
+let peliculas=[ 'Turno de día', '30 noches con mi ex', 'Bestia', 'El monte', 'Top gun maverick','Elvis','Thor: amor y trueno'];
+// punto 3
+let masVendido= peliculas[6].toUpperCase();
+console.log(masVendido);
+let arrayUnshisf=peliculas.unshift(masVendido);
+peliculas.pop();
+console.log(peliculas);
+
+let proximosEstrenos= 'Counter-Strike , NOP , Vértigo , Nick , Avatar';
+let soloPeliculas= proximosEstrenos.slice(-28);
+console.log(soloPeliculas);
+let arrayEstrenos=soloPeliculas.split(",");
+console.log(arrayEstrenos);
+
+function sumaArray (array,array1){
+    let array3 = array.concat(array1);
+
+    return array3
+}
+
+console.log(sumaArray(peliculas,proximosEstrenos));
